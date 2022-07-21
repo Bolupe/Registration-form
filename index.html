@@ -1,70 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Docunment</title>
-    <link rel="stylesheet" href="res.css"> 
-</head>
-<body>
-    <main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsiveness and Media Queries</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
       <div>
-      <header>
         <h1>Learn to code by watching others</h1>
         <p>
           See how experienced developers solve problems in real-time. Watching
           scripted tutorials is great, but understanding how developers think is
           invaluable.
         </p>
-      </header>
       </div>
-
-
       <div>
-      <form action="#">
-        <p><b>Try it free 7 days</b> then $20/mo. thereafter</p>
-        <div id="form">
-          <input
-            type="text"
-            name="fname"
-            id="fname"
-            placeholder="First Name"
-            required
-          />
-          <p class="errMsg">First Name cannot be empty</p>
-          <input
-            type="text"
-            name="lname"
-            id="lname"
-            placeholder="Last Name"
-            required
-          />
-          <p class="errMsg">Last Naame cannot be empty</p>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email Address"
-            required
-          />
-          <p class="errMsg">Looks like this is not an email</p>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Password"
-            required
-          />
-          <p class="errMsg">Password cannot be empty</p>
-          <input type="submit" value="Claim your free trial" id="submit" />
-          <p>
+        <div class="box box-blue">
+          <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+        </div>
+
+        <form action="#" class="box">
+          <div class="form-control">
+            <input type="text" id="firstname" placeholder="First Name" />
+            <small>First Name cannot be empty</small>
+          </div>
+          <div class="form-control">
+            <input type="text" id="lastname" placeholder="Last Name" />
+            <small>Last Name cannot be empty</small>
+          </div>
+          <div class="form-control">
+            <input type="email" id="email" placeholder="Email Address" />
+            <small>Email cannot be empty</small>
+          </div>
+          <div class="form-control">
+            <input type="text" id="password" placeholder="Password" />
+            <small>Password cannot be empty</small>
+          </div>
+
+          <button>Claim your free trial</button>
+          <small>
             By clicking the button, you are agreeing to our
             <a href="#">Terms and Services</a>
-          </p>
-        </div>
+          </small>
+        </form>
       </div>
-      </form>
-    </main>
-</body>
+    </div>
+  </body>
 </html>
